@@ -1,0 +1,26 @@
+﻿<Window x:Class="FinalVasuTevar.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FinalVasuTevar"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Canvas Background="LightBlue">
+        <Button x:Name="btnLoadData" Content="Load Data" Canvas.Left="417" Canvas.Top="35" Height="40" Width="187" FontSize="20" FontWeight="Bold" Click="btnLoadData_Click" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Button x:Name="btnClearData" Content="Clear Data" Canvas.Left="630" Canvas.Top="35" Height="40" Width="138" FontSize="20" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Center" Click="btnClearData_Click"/>
+
+        <Label Content="Name" Canvas.Left="30" Canvas.Top="103" FontSize="16" FontWeight="Bold" RenderTransformOrigin="0.865,0.141" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtName" Width="200" Canvas.Left="90" Canvas.Top="107" FontSize="16"/>
+
+        <Label Content="Age" Canvas.Left="37" Canvas.Top="162" FontSize="16" FontWeight="Bold" RenderTransformOrigin="1.186,0.404"/>
+        <TextBox x:Name="txtAge" Width="200" Canvas.Left="90" Canvas.Top="162" FontSize="16" RenderTransformOrigin="0.748,-0.694"/>
+
+        <Label Content="GPA" Canvas.Left="37" Canvas.Top="230" FontSize="16" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <TextBox x:Name="txtGPA" Width="200" Canvas.Left="90" Canvas.Top="234" FontSize="16"/>
+
+        <Button x:Name="AddStudentBtn" Content="Add Student" Width="132" Canvas.Left="120" Canvas.Top="302" Click="AddStudentBtn_Click" HorizontalAlignment="Center" VerticalAlignment="Top" Height="44" FontSize="20" FontWeight="Bold"/>
+
+        <DataGrid x:Name="StudentsGrd" Width="351" Height="280" Canvas.Left="417" Canvas.Top="100" AutoGenerateColumns="True" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+    </Canvas>
+</Window>
